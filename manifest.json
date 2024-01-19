@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Camera Access Extension",
+  "version": "1.0",
+  "description": "An extension that asks for camera permission and accesses video.",
+  "permissions": [
+    "activeTab",
+    "videoCapture"
+  ],
+  "browser_action": {
+    "default_icon": "logo.jpg",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "logo.jpg"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+}
+}
